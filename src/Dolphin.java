@@ -1,4 +1,4 @@
-public class Hippo extends Waterables {
+public class Dolphin extends Waterables {
     @Override
     public void eat() {
 
@@ -16,6 +16,16 @@ public class Hippo extends Waterables {
 
     @Override
     public void swim() {
+
+    }
+
+    @Override
+    public void feed() {
+
+    }
+
+    @Override
+    public void observe() {
 
     }
 }

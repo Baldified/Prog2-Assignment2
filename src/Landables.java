@@ -18,4 +18,14 @@ public class Landables extends Animal {
     public void swim() {
 
     }
+
+    @Override
+    public void feed() {
+
+    }
+
+    @Override
+    public void observe() {
+
+    }
 }

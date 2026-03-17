@@ -18,4 +18,14 @@ public class Waterables extends Animal {
     public void swim() {
 
     }
+
+    @Override
+    public void feed() {
+
+    }
+
+    @Override
+    public void observe() {
+
+    }
 }

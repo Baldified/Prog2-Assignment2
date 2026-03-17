@@ -18,4 +18,14 @@ public class Giraffe extends Landables {
     public void swim() {
         System.out.println("This animal would rather not swim.");
     }
+
+    @Override
+    public void feed() {
+
+    }
+
+    @Override
+    public void observe() {
+
+    }
 }

@@ -18,4 +18,14 @@ public class Penguin extends Waterables {
     public void swim() {
 
     }
+
+    @Override
+    public void feed() {
+
+    }
+
+    @Override
+    public void observe() {
+
+    }
 }
