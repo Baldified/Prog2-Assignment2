@@ -1,9 +1,7 @@
 public class Monkey extends Landables {
 
     public Monkey(String name, int age, boolean sex) {
-        this.name = name;
-        this.age = age;
-        this.sex = sex;
+        super(name, age, sex);
     }
 
     @Override
@@ -28,6 +26,13 @@ public class Monkey extends Landables {
 
     @Override
     public void observe() {
-        System.out.println("Ooo Aaa");
+        System.out.println("This is " + this.name +
+                             ", " + getPronoun() + " is " + this.age +
+                              " years old, and " + getPronoun() + " is a " + getGender() + ".");
+    }
+
+    @Override
+    public String toString() {
+        return "Monkey[" + super.toString() + "]";
     }
 }

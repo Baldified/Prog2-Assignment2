@@ -1,8 +1,6 @@
 public class Ray extends Waterables {
     public Ray(String name, int age, boolean sex) {
-        this.name = name;
-        this.age = age;
-        this.sex = sex;
+        super(name, age, sex);
     }
 
     @Override
@@ -27,6 +25,13 @@ public class Ray extends Waterables {
 
     @Override
     public void observe() {
-        System.out.println("This is " + this.name + ", he is " + this.age + " years old, and he is a " +  + ".");
+        System.out.println("This is " + this.name +
+                             ", " + getPronoun() + " is " + this.age +
+                              " years old, and " + getPronoun() + " is a " + getGender() + ".");
+    }
+    
+    @Override
+    public String toString() {
+        return "Ray[" + super.toString() + "]";
     }
 }

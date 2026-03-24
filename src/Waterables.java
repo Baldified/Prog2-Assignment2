@@ -1,26 +1,26 @@
 public class Waterables extends Animal {
-    @Override
-    public void play() {
 
+    public Waterables(String name, int age, boolean sex) {
+        super(name, age, sex);
     }
 
     @Override
-    public void walk() {
-
-    }
+    public void play() {}
 
     @Override
-    public void swim() {
-
-    }
+    public void walk() {}
 
     @Override
-    public void feed() {
-
-    }
+    public void swim() {}
 
     @Override
-    public void observe() {
+    public void feed() {}
 
+    @Override
+    public void observe() {}
+
+    @Override
+    public String toString() {
+        return "Waterables[" + super.toString() + "]";
     }
 }
