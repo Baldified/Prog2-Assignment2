@@ -1,6 +1,5 @@
-public class Dolphin extends Waterables {
-
-    public Dolphin(String name, int age, boolean sex) {
+public class Ray extends Waterables {
+    public Ray(String name, int age, boolean sex) {
         this.name = name;
         this.age = age;
         this.sex = sex;
@@ -8,7 +7,7 @@ public class Dolphin extends Waterables {
 
     @Override
     public void play() {
-        System.out.println("Gloo Gloob Gloo");
+        System.out.println("Flop Flomp Flop");
     }
 
     @Override
@@ -18,16 +17,16 @@ public class Dolphin extends Waterables {
 
     @Override
     public void swim() {
-        System.out.println("Gloo Gloo");
+        System.out.println("Flop Flop");
     }
 
     @Override
     public void feed() {
-        System.out.println("Fuh Fah Fuh");
+        System.out.println("Gobble Gobble Gobble");
     }
 
     @Override
     public void observe() {
-        System.out.println("Sui Siu Sui");
+        System.out.println("This is " + this.name + ", he is " + this.age + " years old, and he is a " +  + ".");
     }
 }

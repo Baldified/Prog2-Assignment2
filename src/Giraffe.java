@@ -1,17 +1,19 @@
 public class Giraffe extends Landables {
-    @Override
-    public void eat() {
 
+    public Giraffe(String name, int age, boolean sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
     }
 
     @Override
     public void play() {
-
+        System.out.println("Stomp Stomp Stomp");
     }
 
     @Override
     public void walk() {
-
+        System.out.println("Stomp Stomp");
     }
 
     @Override
@@ -21,11 +23,11 @@ public class Giraffe extends Landables {
 
     @Override
     public void feed() {
-
+        System.out.println("Crunk Crunk");
     }
 
     @Override
     public void observe() {
-
+        System.out.println("Moo Moo");
     }
 }

@@ -1,10 +1,5 @@
 public class Waterables extends Animal {
     @Override
-    public void eat() {
-
-    }
-
-    @Override
     public void play() {
 
     }
