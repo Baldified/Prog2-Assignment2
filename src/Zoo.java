@@ -15,9 +15,9 @@ public class Zoo {
         this.animals = zoo.animals;
     } 
 
-    public void fun() {
+    public void playTime() {
         for (Animal a : animals)
-            a.makeSound();
+            a.play();
     }
 
     @Override

@@ -59,6 +59,6 @@ public class Main {
 
         Zoo zoo = new Zoo(animals);
         System.out.println(zoo.toString());
-        zoo.fun();
+        zoo.playTime();
     }
 }
