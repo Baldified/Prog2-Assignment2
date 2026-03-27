@@ -3,9 +3,9 @@ import java.util.Objects;
 
 public abstract class Animal {
 
-    String name;
-    int age;
-    boolean sex;
+    protected String name;
+    protected int age;
+    protected boolean sex;
 
     public abstract void makeSound();
     public abstract void play();

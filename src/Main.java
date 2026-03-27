@@ -15,12 +15,19 @@ public class Main {
         Monkey monk1 = new Monkey("F", 5, true);
         Monkey monk2 = new Monkey("G", 6, true);
 
+        System.out.println(ray1.getName());
+        System.out.println(ray1.getAge());
+        System.out.println(ray1.getSex());
+        ray1.setAge(3);
+        ray1.setName("Mahik");
+        ray1.setSex(false);
+
         ray1.observe();
         ray1.feed();
         ray1.play();
         ray1.swim();
         ray1.walk();
-        System.out.println(ray1.toString());
+        System.out.println(ray1);
         System.out.println(ray1.equals(ray2) + "\n");
 
         dol1.observe();
@@ -28,7 +35,7 @@ public class Main {
         dol1.play();
         dol1.swim();
         dol1.walk();
-        System.out.println(dol1.toString());
+        System.out.println(dol1);
         System.out.println(dol1.equals(dol2) + "\n");
 
         gif1.observe();
@@ -36,7 +43,7 @@ public class Main {
         gif1.play();
         gif1.swim();
         gif1.walk();
-        System.out.println(gif1.toString());
+        System.out.println(gif1);
         System.out.println(gif1.equals(gif2) + "\n");
 
         monk1.observe();
@@ -44,7 +51,7 @@ public class Main {
         monk1.play();
         monk1.swim();
         monk1.walk();
-        System.out.println(monk1.toString());
+        System.out.println(monk1);
         System.out.println(monk1.equals(monk2) + "\n");
 
         ArrayList<Animal> animals = new ArrayList<>();
@@ -58,7 +65,7 @@ public class Main {
         animals.add(monk2);
 
         Zoo zoo = new Zoo(animals);
-        System.out.println(zoo.toString());
+        System.out.println(zoo);
         zoo.playTime();
     }
 }
