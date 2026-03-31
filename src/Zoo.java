@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Zoo {
     ArrayList<Animal> animals;
@@ -19,6 +20,25 @@ public class Zoo {
         for (Animal a : animals)
             a.play();
     }
+
+    public Animal findAnimalByName(String name) {
+        for (Animal a : animals)
+            if ((a.name).equals(name))
+                return a;
+
+        return null;
+    }
+
+    public void showSpecialAction(String name) {
+        Animal a = findAnimalByName(name);
+        if (a instanceof Landables)
+            ((Landables) a).walk();
+        else if (a instanceof Waterables)
+            a.swim();
+        else
+            System.out.println("Animal not found");
+    }
+
 
     @Override
     public boolean equals(Object obj) {
